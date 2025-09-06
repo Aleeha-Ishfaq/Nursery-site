@@ -6,13 +6,14 @@
 
 /* ================= Navbar ================== */
 .navbar {
-  background: linear-gradient(-45deg, #10a515, #02af67, #5daf15, #169807);
+  background: linear-gradient(-45deg, #12a510, #02af67, #5daf15, #169807);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 20px;
   color: white;
 }
@@ -31,17 +32,17 @@
 
 .logo img {
   border-radius: 100px;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .logo-name h1 {
-  font-size: 24px;
+  font-size: 32px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 /* Cart Icon */
 .navbar {
-  background: linear-gradient(-45deg, #168f1a, #39eba1, #72db16, #27be17);
+  background: linear-gradient(-45deg, #168f1a, #07834f, #4a9b03, #13a403);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   height: 100px;
@@ -136,9 +137,9 @@
   height: 45px;
   width: 120px;
   cursor: pointer;
+  text-align: center;
 }
-
-#btn-start a {
+#btn-start a{
   text-decoration: none;
   color: white;
   display: block;
@@ -146,15 +147,19 @@
   height: 100%;
   line-height: 45px;
 }
-
+#btn-start:hover{
+  background-color: darkgreen;
+}
 /* ================= About Section ================== */
 .about-nursery {
   margin-top: 40px;
 }
 
 .about-nursery p {
-  background: rgba(229, 23, 171, 0.959);
-  color: white;
+  /* background: rgba(255,105,180,0.8); */
+  background-color: rgb(224, 32, 160);
+  opacity: 0.9;
+  color: rgb(243, 224, 224);
   padding: 20px;
   border-radius: 10px;
   font-size: clamp(12px, 2.5vw, 16px);
@@ -215,7 +220,7 @@ position: absolute;
     top:290px;
     left:50%;
     transform: translateX(-50%); 
-    background-color: red;
+    background-color: rgb(223, 16, 16);
     color:whitesmoke;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -324,10 +329,11 @@ position: absolute;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
+  
 }
 
 .cart-item .quantity button:hover {
-  background-color: #45a049;
+  background-color: #08840e;
 }
 
 /* Remove button */
@@ -387,7 +393,11 @@ position: absolute;
   .box h3{
    font-size: 14px;
   }
-  
+  .navbar{
+    display: flex;
+    align-items: center;
+    
+  }
   .boxes{
    margin:0 10px;
    display: grid;
@@ -397,6 +407,9 @@ position: absolute;
   .box img{
    width:150px;
   }
+  #plants, #flower{
+    font-size: 27px;
+  }
 }
 @media(max-width:359px){
    .boxes{
@@ -404,5 +417,9 @@ position: absolute;
    display: grid;
    grid-template-columns: repeat(1,1fr);
    gap:10px;
+  }
+  #flower, #plants{
+    font-size: 24px;
+    margin-top: 20px;
   }
 }
