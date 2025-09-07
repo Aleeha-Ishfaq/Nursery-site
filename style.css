@@ -68,7 +68,7 @@
 
 .logo-name h1 {
   font-size: 24px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.2);
 }
 
 /* Cart always right */
@@ -158,7 +158,7 @@
 .about-nursery p {
   /* background: rgba(255,105,180,0.8); */
   background-color: rgb(224, 32, 160);
-  opacity: 0.8;
+  opacity: 0.9;
   color: white;
   padding: 20px;
   border-radius: 10px;
@@ -393,11 +393,7 @@ position: absolute;
   .box h3{
    font-size: 14px;
   }
-  .navbar{
-    display: flex;
-    align-items: center;
-    
-  }
+  
   .boxes{
    margin:0 10px;
    display: grid;
@@ -410,6 +406,9 @@ position: absolute;
   #plants, #flower{
     font-size: 27px;
   }
+  #flower{
+    margin-top: 20px;
+  }
 }
 @media(max-width:359px){
    .boxes{
@@ -420,6 +419,14 @@ position: absolute;
   }
   #flower, #plants{
     font-size: 24px;
+  }
+  #flower{
     margin-top: 20px;
+  }
+  .navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:10px;
   }
 }
